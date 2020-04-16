@@ -1,0 +1,15 @@
+.form-control {
+  width: 900px;
+}
+
+button {
+  float: right;
+}
+
+#btnCancel {
+  margin-right: 10px;
+}
+
+form {
+  margin: auto;
+}

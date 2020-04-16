@@ -1,0 +1,35 @@
+.navbar {
+  justify-content: center;
+  color: lightcyan;
+}
+
+.navbar-dark .navbar-brand {
+  color: lightslategrey;
+  font-weight: bold;
+}
+
+.container {
+  padding: 30px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  border-radius: 20px;
+}
+
+h1 {
+  padding: 30px;
+  font-weight: bolder;
+}
+
+h3 {
+  display: inline-block;
+}
+
+#rowDisplay {
+  margin-bottom: 30px;
+}
+
+.table-scroll {
+  position: relative;
+  height: 350px !important;
+  /* width: 980px !important; */
+  overflow: auto;
+}

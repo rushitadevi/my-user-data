@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-import App from './App';
+import "./StyleSheet/dashboard.css"
+import "./StyleSheet/user.css"
 import * as serviceWorker from './serviceWorker';
+import Home from './Components/Home';
+import { Provider } from 'react-redux';
+import configureStore from "./Store/Index.js";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={configureStore()}>
+    <Home />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
