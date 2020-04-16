@@ -29,9 +29,9 @@ class Dashboard extends Component {
     deleteUser = (id) => {
         const ans = window.confirm("Are you sure you want to delete user?");
         if (ans === true) {
-            this.props.deleteUserThunk(id)
-            alert("user deleted successfully.")
+            this.props.deleteUserThunk(id)            
             this.props.getusersThunk();
+            alert("user deleted successfully.")
         }
     }
 
