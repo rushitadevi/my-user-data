@@ -87,11 +87,17 @@ class User extends Component {
             this.props.history.push("/")
         }
         else {
-            this.props.AddUserThunk(this.state.user)            
-            this.setState({
-                alertMessage:"success"
-            })
-            
+            const ans = window.confirm("user added successfully.");
+            if(ans===true)
+            {
+                this.props.AddUserThunk(this.state.user)            
+                this.setState({
+                    alertMessage:"success"
+                })
+            }
+            else{
+               
+            }
         }
     }
 

@@ -31,7 +31,7 @@ class Dashboard extends Component {
         if (ans === true) {
             this.props.deleteUserThunk(id)            
             this.props.getusersThunk();
-            alert("user deleted successfully.")
+           // alert("user deleted successfully.")
         }
     }
 
